@@ -1,0 +1,30 @@
+Bar Chart for Gender Distribution
+
+import matplotlib.pyplot as plt
+# Example data for gender distribution
+genders = ['Male', 'Female', 'Other']
+frequencies = [50, 45, 5]
+# Create bar chart for gender distribution
+plt.figure(figsize=(8, 6))
+plt.bar(genders, frequencies, color=['blue', 'pink', 'purple'])
+plt.xlabel('Gender')
+plt.ylabel('Frequency')
+plt.title('Distribution of Gender')
+plt.show()
+
+Histogram for Age Distribution
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Example data for age distribution
+np.random.seed(0)
+ages = np.random.randint(18, 80, size=100)
+
+# Create histogram for age distribution
+plt.figure(figsize=(8, 6))
+plt.hist(ages, bins=10, color='skyblue', edgecolor='black')
+plt.xlabel('Age')
+plt.ylabel('Frequency')
+plt.title('Distribution of Ages')
+plt.show()
+
